@@ -23,20 +23,25 @@ function calcular() {
 
 function valida_form() {
   if (document.getElementById("nota1").value.length < 1) {
-    alert('Por favor, preencha o valor da nota do 1º bimestre');
     document.getElementById("nota1").focus();
-    return false
+      Swal.fire({
+      icon:'error',
+      text:'Por favor, preencha o valor da nota do 1º bimestre'});
+      return false
   } else if (document.getElementById("nota2").value.length < 1) {
-    alert('Por favor, preencha o valor da nota do 2º bimestre');
     document.getElementById("nota2").focus();
+    Swal.fire({ icon:'error',
+    text:'Por favor, preencha o valor da nota do 2º bimestre'});
     return false
   } else if (document.getElementById("nota3").value.length < 1) {
-    alert('Por favor, preencha o valor da nota do 3º bimestre');
     document.getElementById("nota3").focus();
+    Swal.fire( {icon:'error',
+    text:'Por favor, preencha o valor da nota do 3º bimestre'});
     return false
   } else if (document.getElementById("nota4").value.length < 1) {
-    alert('Por favor, preencha o valor da nota do 4º bimestre');
     document.getElementById("nota4").focus();
+    Swal.fire( {icon:'error',
+    text:'Por favor, preencha o valor da nota do 4º bimestre'});
     return false
   }
 }

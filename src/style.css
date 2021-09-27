@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 body {
   font-family: "Roboto Mono", monospace;
   min-height: 400px;
@@ -10,6 +11,7 @@ body {
 }
 
 .container {
+  font-family: 'Courier New', Courier, monospace;
   text-align: center;
   padding: 20px;
   height: 100vh;
@@ -49,4 +51,17 @@ button {
   margin-left: 50px;
   margin-top: 12px;
   padding: 4px 8px;
+}
+
+
+#swal2-html-container{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+#swal2-actions{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
 }
